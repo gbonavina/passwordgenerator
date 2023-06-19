@@ -10,9 +10,9 @@ int main()
     int c, n;
     int index;
 
-    printf("Digite o numero de caracteres da senha: ");
+    printf("Digite o numero de caracteres da senha (enter the amount of characters): ");
     scanf("%d", &c);
-    printf("Digite quantas senhas devem ser geradas: ");
+    printf("Digite quantas senhas devem ser geradas (enter the amount of passwords): ");
     scanf("%d", &n);
 
     char pwrd[n][c + 1];
@@ -28,7 +28,7 @@ int main()
         }
 
         pwrd[i][c] = '\0';
-        printf("Senha %d: %s\n", i + 1, pwrd[i]);
+        printf("Senha %d (Password %d): %s\n", i + 1, i + 1, pwrd[i]);
     }
 
     return 0;
